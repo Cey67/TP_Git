@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Café des Devs - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">☕ Le Café des Devs</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-header">
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>Une question ? Une suggestion ? Écrivez-nous !</p>
+    </div>
+</div>
+
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-form-wrapper">
+                <h2>Envoyez-nous un message</h2>
+                <!-- BUG HOTFIX #3: Formulaire ne se soumet pas - attribut manquant -->
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Informations</h2>
+
+                <div class="info-card">
+                    <h3>📍 Adresse</h3>
+                    <p>123 Rue du Code<br>67000 Strasbourg<br>France</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📞 Téléphone</h3>
+                    <p>03 88 12 34 56</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>✉️ Email</h3>
+                    <p>contact@cafedesdevs.fr</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🕐 Horaires d'ouverture</h3>
+                    <p>
+                        Lundi - Vendredi: 8h - 20h<br>
+                        Samedi: 9h - 18h<br>
+                        Dimanche: Fermé
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🌐 Suivez-nous</h3>
+                    <p>
+                        Twitter: @cafedesdevs<br>
+                        Instagram: @cafedesdevs<br>
+                        LinkedIn: Le Café des Devs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 123 Rue du Code, 67000 Strasbourg</p>
+                <p>📞 03 88 12 34 56</p>
+                <p>✉️ contact@cafedesdevs.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horaires</h3>
+                <p>Lun-Ven: 8h-20h</p>
+                <p>Sam: 9h-18h</p>
+                <p>Dim: Fermé</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Le Café des Devs</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

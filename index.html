@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Café des Devs - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">☕ Le Café des Devs</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <!-- BUG HOTFIX #1: Lien cassé - pointe vers contact.php -->
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <!-- BUG FIX #6: Faute "Bienvenu" sans 'e' -->
+        <h1>Bienvenu chez Le Café des Devs</h1>
+        <!-- BUG FIX #6: Faute "developeurs" sans accent -->
+        <p>Le lieu idéal pour coder, se détendre et rencontrer d'autre developeurs</p>
+        <!-- BUG HOTFIX #2: Bouton ne fonctionne pas - mauvais ID -->
+        <button class="btn-primary" id="btn-reservation">Réserver une table</button>
+    </div>
+</header>
+
+<section class="features-section">
+    <div class="container">
+        <h2>Pourquoi nous choisir ?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📶</div>
+                <h3>WiFi Ultra-rapide</h3>
+                <p>Connexion fiber 1Gb/s</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔌</div>
+                <h3>Prises Électriques</h3>
+                <!-- BUG FIX #6: Faute "partous" -->
+                <p>Des prises disponibles partous</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <h3>Café de Qualité</h3>
+                <p>Sélection de cafés d'exception</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤫</div>
+                <h3>Espaces Silencieux</h3>
+                <p>Zones calmes pour se concentrer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURE #3: Ajouter section témoignages ici -->
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Prêt à nous rejoindre ?</h2>
+        <p>Découvrez notre menu</p>
+        <a href="menu.html" class="btn-primary">Voir le menu</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>📍 123 Rue du Code, 67000 Strasbourg</p>
+                <p>📞 03 88 12 34 56</p>
+                <p>✉️ contact@cafedesdevs.fr</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horaires</h3>
+                <p>Lun-Ven: 8h-20h</p>
+                <p>Sam: 9h-18h</p>
+                <p>Dim: Fermé</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Le Café des Devs</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
