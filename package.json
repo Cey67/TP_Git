@@ -1,0 +1,23 @@
+{
+  "name": "tp-git",
+  "version": "1.0.0",
+  "description": "Le Café des Devs - Projet TP Git Flow",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "start": "npx live-server --port=3000 --open=/index.html"
+  },
+  "keywords": [
+    "cafe",
+    "devs",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
+
